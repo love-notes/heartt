@@ -1378,17 +1378,18 @@
 
       // typewriter letter content (English, from girl to boy)
       const LETTER_TEXT =
-`my dearest, Dzkh.
+`My dearest, Dzkh.
 
-I just want to say thank you sooooo much. Ini beneran!! thank you for being here the way you are. ga ribet, ga berlebihan, tapi selalu ada. that means more than you probably realize.
+I just want to say thank you sooo much. Beneran, thank you for being here the way you are. Ga ribet, ga berlebihan, tapi selalu ada. And that means more than you probably realize.
 
-thank uu karena selalu dengerin aku tanpa bikin aku ngerasa too much. makasi karena kamu stay calm waktu aku lagi gajelas, random atau overthinking apalagi sampai suka block kamu. you don’t try to fix everything, you just stay. and somehow that’s enough.
+Thank you karena selalu dengerin aku tanpa bikin aku ngerasa too much. Makasi karena kamu stay calm waktu aku lagi nggak jelas, random, atau overthinking sampai kadang suka block kamu. You don’t try to fix everything, you just stay and somehow that’s more than enough.
 
-and the fact that we’ve been doing this for years… that’s not something small. kita udah lewatin banyak fase, banyak mood, banyak situasi. but we’re still here. still choosing each other. and I don’t take that lightly.
+And the fact that we’ve been doing this for year, that’s not something small. Kita udah lewatin banyak fase, banyak mood, banyak situasi. But we’re still here. Still choosing each other. And I don’t take that lightly.
 
-aku ga butuh hal yang berlebihan. honestly, just you being u aja udah  cukup bikin hari aku lebih ringan. thanks a lot for staying, for growing with me, and for these almost two years that mean more to me than you probably know.
+Aku nggak butuh hal yang berlebihan. Honestly, just you being you aja udah cukup bikin hari aku lebih ringan. Thank you for staying, for growing with me, and for all this time we’ve been choosing each other it means more to me than you’ll ever know.
 
-With Love, Natnat<3`;
+With love,
+Natnat <3`;
 
       // reveal letter with typewriter, show scrollable box
       function revealLetter(){
@@ -1401,7 +1402,7 @@ With Love, Natnat<3`;
         finalLetterBox.style.display = 'block';
         // ensure box focused so user can scroll with keyboard
         finalLetterBox.focus();
-        typeWriter(LETTER_TEXT, finalLetterBox, 24, function(){
+        typeWriter(LETTER_TEXT, finalLetterBox, 60, function(){
           // when finished typing, start continuous petals and a small celebratory burst
           spawnPetalBurst(16);
           if(!petalsInterval) {
